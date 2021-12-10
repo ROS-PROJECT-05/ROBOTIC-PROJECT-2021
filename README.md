@@ -5,3 +5,10 @@
 
 # Project goal 
 This project focuses on elementary turtlebot3 self-driving, which can follow the lane detected  lines.
+
+# Requirement 
+TurtleBot3 Burger (with packages installed on it), provided by our https://condorcet.u-bourgogne.fr/en
+It is a basic model to use AutoRace packages for autonomous driving on ROS.
+
+
+
