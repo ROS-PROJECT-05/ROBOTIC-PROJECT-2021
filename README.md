@@ -14,10 +14,8 @@ This project focuses on elementary turtlebot3 self-driving, which can follow the
 ![3](https://user-images.githubusercontent.com/62597513/145630186-4da6bcb0-b4aa-4c0d-b006-39453fabb56b.png)
 source : https://www.robotis.us/turtlebot-3-burger-us/
 
-- Remote PC, provided by our https://condorcet.u-bourgogne.fr/en
-  - It communicates with a single board computer (SBC) on Turtlebot3.
-  - Laptop, desktop, or other devices with ROS 3.
-
+- Ubuntu 18.04
+- Camera - Raspberry Pi ‘fish-eye’ camera
 - ROS-kinetic_Autorace_2020 and dependent ROS packages were installed on the system by cloning this github link https://github.com/ROBOTIS-GIT/turtlebot3_autorace 
 
 
