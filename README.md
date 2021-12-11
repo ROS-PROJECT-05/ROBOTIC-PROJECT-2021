@@ -84,6 +84,7 @@ After the fine-tuning,  we then write the modified values to the lane.yaml file 
 
 # 3. Stretch goal
 This project focuses on driving the robot without external force by detecting two lanes. The workflow seems not much complicated other than some external constraints such as the environment light intensity. This has a great effect on the camera projection which makes it difficult for the turtlebot3 to maintain consistency. 
+
 We started the traffic light detection but couldn't complete it because of time constraints and  the thresholding process seems to be the biggest challenge. 
 
 Our longtime goal is to complete the traffic light detection and work further on other missions on the Turtlebot3 Autorace challenge for personal development. Therefore, we can tend to edit this project after  the implementation of the other Turtlebot3 Autorace tasks. 
