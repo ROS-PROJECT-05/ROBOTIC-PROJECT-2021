@@ -46,16 +46,20 @@ Therefore, the camera mounted on our turtlebot3 is Raspberry Pi ‘fish-eye’ c
    ## 1.1 Camera Imaging Calibration
    The camera imaging calibration was done using the **rqt_reconfigure** package to modify parameter values and enable the turtlebot3 mounted camera to see clear images. the contrast, brightness, sharpness, and saturation parameters for clarity of the system camera.
 Thus, the modified parameters were overwritten in the **camera.yaml** file located in **turtlebot3autorace_traffic_light_camera/calibration/camera_calibration** folder. This will make the camera set its parameters for the next launch. Here is the result of the modified image and parameters;
+
 ![clear_image](https://user-images.githubusercontent.com/62597513/145644291-e0759511-8460-455e-88c7-f2727d1429b2.jpeg) 
+
 ![Clearimageparam](https://user-images.githubusercontent.com/62597513/145644866-494950ef-4c39-4e47-8af6-533b4a35513d.jpeg)
 
 
   ## 1.2 Intrinsic Camera Calibration
   The Intrinsic parameters of a camera deals with the camera's internal characteristics like its focal length, skew, distortion, and image center. For this project, the intrinsic calibration was done using a 6x8 printed checkerboard. 
+  
   ![Calibration](https://user-images.githubusercontent.com/62597513/145639462-6dd9fe60-accd-419f-ba43-865664e03ebc.jpeg)
 
   After the calibration, the **calibrationdata.tar.gz** folder was created at /tmp folder. We then extract the data from the ost.yalm file and save it in **turtlebot3_autorace_camera/calibration/intrinsic_calibration/camerav2_320x240_30fps.yaml**. The result is shown below; 
-    ![Calparam](https://user-images.githubusercontent.com/62597513/145639716-aa910eb4-1fcf-4872-bca0-d34437297eab.jpeg)
+  
+  ![Calparam](https://user-images.githubusercontent.com/62597513/145639716-aa910eb4-1fcf-4872-bca0-d34437297eab.jpeg)
 
 
   ## 1.3 Extrinsic Camera Calibration
