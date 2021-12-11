@@ -24,6 +24,7 @@ This project focuses on elementary turtlebot3 self-driving, which drives between
 - Turtlebot3: It is the newest generational mobile robot. It is a basic model to use AutoRace packages for autonomous driving on ROS. For this project, the TurtleBot3 Burger (with packages installed on it) was  provided by our university https://condorcet.u-bourgogne.fr/en.  The main components are shown below: 
 
 ![3](https://user-images.githubusercontent.com/62597513/145630186-4da6bcb0-b4aa-4c0d-b006-39453fabb56b.png)
+
 source : https://www.robotis.us/turtlebot-3-burger-us/
 
 - Ubuntu 18.04
