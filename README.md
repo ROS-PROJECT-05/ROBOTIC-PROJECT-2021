@@ -42,11 +42,11 @@ source : https://www.robotis.us/turtlebot-3-burger-us/
 
 # 1. Camera Calibration 
 Geometric camera calibration estimates the parameters of a lens and image sensor of an image or video camera. These parameters could be used to correct lens distortion, measure the size of an object in world units, or determine the location of the camera in the scene.
-Therefore, the camera mounted on our turtlebot3 is Raspberry Pi ‘fish-eye’ camera, thus, it has very large distortion. But the images needed for this project should have little distortion so as not to affect the image processing steps. To rectify the distortion, we mainly use the Ros-Kinetic Camera Imaging Calibration from https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving_autorace/. The following describes how to simply calibrate the camera step by step;
+Therefore, the camera mounted on our turtlebot3 is Raspberry Pi ‘fish-eye’ camera, thus, it has very large distortion. But the images needed for this project should have little distortion so as not to affect the image processing steps. To rectify the distortion, we mainly use the Ros-Kinetic Camera Imaging Calibration from https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving_autorace/. The following describes how to simply calibrate the camera step by step:
 
    ## 1.1 Camera Imaging Calibration
 The camera imaging calibration was done using the **rqt_reconfigure** package to modify parameter values and enable the turtlebot3 mounted camera to see clear images, the contrast, brightness, sharpness, and saturation parameters for clarity of the system camera.
-Thus, the modified parameters were overwritten in the **camera.yaml** file located in **turtlebot3autorace_traffic_light_camera/calibration/camera_calibration** folder. This will make the camera set its parameters for the next launch. Here is the result of the modified image and parameters;
+Thus, the modified parameters were overwritten in the **camera.yaml** file located in **turtlebot3autorace_traffic_light_camera/calibration/camera_calibration** folder. This will make the camera set its parameters for the next launch. Here is the result of the modified image and parameters:
 
 ![clear_image](https://user-images.githubusercontent.com/62597513/145644291-e0759511-8460-455e-88c7-f2727d1429b2.jpeg) 
 
@@ -58,14 +58,13 @@ The Intrinsic parameters of a camera deals with the camera's internal characteri
   
   ![Calibration](https://user-images.githubusercontent.com/62597513/145639462-6dd9fe60-accd-419f-ba43-865664e03ebc.jpeg)
 
-  After the calibration, the **calibrationdata.tar.gz** folder was created at /tmp folder. We then extract the data from the ost.yalm file and save it in **turtlebot3_autorace_camera/calibration/intrinsic_calibration/camerav2_320x240_30fps.yaml**. The result is shown below; 
+  After the calibration, the **calibrationdata.tar.gz** folder was created at /tmp folder. We then extract the data from the ost.yalm file and save it in **turtlebot3_autorace_camera/calibration/intrinsic_calibration/camerav2_320x240_30fps.yaml**. The result is shown below: 
   
   ![Calparam](https://user-images.githubusercontent.com/62597513/145639716-aa910eb4-1fcf-4872-bca0-d34437297eab.jpeg)
 
 
   ## 1.3 Extrinsic Camera Calibration
-The Extrinsic Camera calibration was done in order to acquire the robot pose and orientation. To get these done, we get the “birds-eye view” of the road and then launch the intrinsic modified calibration parameters as such in **action mode** before running the Extrinsic calibration packages. The images below shows the **default image** and the **corrected image**;
-
+The Extrinsic Camera calibration was done in order to acquire the robot pose and orientation. To get these done, we get the “birds-eye view” of the road and then launch the intrinsic modified calibration parameters as such in **action mode** before running the Extrinsic calibration packages. The images below shows the **default image** and the **corrected image**:
 ![Defaul_image](https://user-images.githubusercontent.com/62597513/145645109-80beced6-c303-4c5d-9ec8-975b37e57fba.jpeg)
 
 ![Corrected_image](https://user-images.githubusercontent.com/62597513/145645464-2293c975-848c-468d-a947-2071eb8caeec.jpeg)
