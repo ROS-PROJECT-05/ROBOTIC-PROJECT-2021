@@ -44,7 +44,7 @@ Geometric camera calibration estimates the parameters of a lens and image sensor
 Therefore, the camera mounted on our turtlebot3 is Raspberry Pi ‘fish-eye’ camera, thus, it has very large distortion. But the images needed for this project should have little distortion so as not to affect the image processing steps. To rectify the distortion, we mainly use the Ros-Kinetic Camera Imaging Calibration from https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving_autorace/. The following describes how to simply calibrate the camera step by step;
 
    ## 1.1 Camera Imaging Calibration
-The camera imaging calibration was done using the **rqt_reconfigure** package to modify parameter values and enable the turtlebot3 mounted camera to see clear images. the contrast, brightness, sharpness, and saturation parameters for clarity of the system camera.
+The camera imaging calibration was done using the **rqt_reconfigure** package to modify parameter values and enable the turtlebot3 mounted camera to see clear images, the contrast, brightness, sharpness, and saturation parameters for clarity of the system camera.
 Thus, the modified parameters were overwritten in the **camera.yaml** file located in **turtlebot3autorace_traffic_light_camera/calibration/camera_calibration** folder. This will make the camera set its parameters for the next launch. Here is the result of the modified image and parameters;
 
 ![clear_image](https://user-images.githubusercontent.com/62597513/145644291-e0759511-8460-455e-88c7-f2727d1429b2.jpeg) 
@@ -63,7 +63,7 @@ The Intrinsic parameters of a camera deals with the camera's internal characteri
 
 
   ## 1.3 Extrinsic Camera Calibration
-The Extrinsic Camera calibration was done in order to acquire the robot pose and orientation. Firstly, the intrinsic modified calibration parameters were executed as such in **action mode** before running the Extrinsic calibration packages. The images below shows the **default image** and the **corrected image**;
+The Extrinsic Camera calibration was done in order to acquire the robot pose and orientation. To get these done, we get the “birds-eye view” of the road and then launch the intrinsic modified calibration parameters as such in **action mode** before running the Extrinsic calibration packages. The images below shows the **default image** and the **corrected image**;
 
 ![Defaul_image](https://user-images.githubusercontent.com/62597513/145645109-80beced6-c303-4c5d-9ec8-975b37e57fba.jpeg)
 
@@ -71,7 +71,7 @@ The Extrinsic Camera calibration was done in order to acquire the robot pose and
 
 
 # 2. Lane Detection 
-The Lane detection package allows Turtlebot3 to drive between two lanes without external influence. The robot was placed on the lane whereby the yellow line was on the left side of the robot, and the white line was placed on the right side of the robot. From here, we adjust the filter parameters by doing the thresholding of the HSL using the **rqt_reconfigure package** to show the correct lines and the direction as such, the red line was overlaid on the yellow line while the blue line was overlaid on the white line. 
+The Lane detection package allows Turtlebot3 to drive between two lanes without external influence. The robot was placed on the lane whereby the **yellow line** was on the left side of the robot, and the **white line** was placed on the right side of the robot. From here, we adjust the filter parameters by doing the thresholding of the HSL using the **rqt_reconfigure** package to fine-tune the lines and the direction as such, the red line was overlaid on the yellow line while the blue line was overlaid on the white line. 
 
 ![lane_Dt_rqt](https://user-images.githubusercontent.com/62597513/145659059-5e3c2f72-d3b5-463a-af8e-f9c8682189dc.jpeg)
 
@@ -82,7 +82,12 @@ The **HSL** (hue, saturation and lightness) is a cylindrical color model that re
 After the fine-tuning,  we then write the modified values to the lane.yaml file located in **turtlebot3autorace_traffic_light_detect/param/lane/**.
 
 
-# 3. Limitation 
+# 3. Stretch goal
+This project focuses on driving the robot without external force by detecting two lanes. The workflow seems not much complicated other than some external constraints such as the environment light intensity. This has a great effect on the camera projection which makes it difficult for the turtlebot3 to maintain consistency. 
+We started the traffic light detection but couldn't complete it because of time constraints and  the thresholding process seems to be the biggest challenge. 
+
+Our longtime goal is to complete the traffic light detection and work further on other missions on the Turtlebot3 Autorace challenge for personal development. Therefore, we can tend to edit this project after  the implementation of the other Turtlebot3 Autorace tasks. 
+
 
 
 
