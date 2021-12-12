@@ -67,7 +67,7 @@ The Intrinsic parameters of a camera deals with the camera's internal characteri
   ## 1.3 Extrinsic Camera Calibration
 The Extrinsic Camera calibration was done in order to acquire the robot pose and orientation. To get these done, we get the “birds-eye view” of the road, then launched the intrinsic modified calibration parameters as such in **action mode** before running the Extrinsic calibration packages and finally excuted **rqt_reconfigure** to adjust the parameters. The images below shows the **default image** and the **modified image**:
 
-![Defaul_image](https://user-images.githubusercontent.com/62597513/145645109-80beced6-c303-4c5d-9ec8-975b37e57fba.jpeg)
+![defaul](https://user-images.githubusercontent.com/62597513/145728174-e11c5f22-b75a-4501-8b73-d2a513f3e974.jpeg)
 
 ![Corrected_image](https://user-images.githubusercontent.com/62597513/145645464-2293c975-848c-468d-a947-2071eb8caeec.jpeg)
 
