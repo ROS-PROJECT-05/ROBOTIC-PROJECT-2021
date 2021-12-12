@@ -1,0 +1,15 @@
+camera:
+  ISO: 963
+  awb_mode: auto
+  brightness: 57
+  contrast: 6
+  exposureCompensation: 0
+  exposure_mode: auto
+  hFlip: false
+  saturation: 83
+  sharpness: 41
+  shutterSpeed: 25000
+  vFlip: false
+  videoStabilisation: false
+  zoom: 1.0
+
