@@ -29,6 +29,7 @@ source : https://www.robotis.us/turtlebot-3-burger-us/
 
 - Ubuntu 18.04
 - Camera - Raspberry Pi ‘fish-eye’ camera
+- The system was run through a **stationary PC**, connected to the TurtleBot3
 - ROS-kinetic_Autorace_2020 and dependent ROS packages were installed on the system by cloning this github link https://github.com/ROBOTIS-GIT/turtlebot3_autorace 
 
 
