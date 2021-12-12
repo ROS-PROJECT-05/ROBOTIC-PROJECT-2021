@@ -78,24 +78,26 @@ The Lane detection package allows Turtlebot3 to drive between two lanes without 
 
 The **HSL** (hue, saturation and lightness) is a cylindrical color model that remaps the RGB primary colors into dimensions. It is important to note that the three dimensions of the HSL color model are interdependent. If the value dimension of a color is set to 0%, the amount of hue and saturation does not matter as the color will be black. Likewise, if the saturation of a color is set to 0%, the hue does not matter as there is no color used. 
 
+Prior to our specific goal, we placed the turtlebot3 close to the **Big Tunnel** to adjust the parameters value. We had the idea that if the turtlebot3 can detect the lanes in a darker space  then it will easily detect the lanes in a lightning environment.
+
 ![lane_D](https://user-images.githubusercontent.com/62597513/145658830-e65d4af2-d79d-45e4-b165-ba2b25b01b1a.jpeg)
 
 After the fine-tuning,  we then write the modified values of the **lane.yaml** file located in **turtlebot3autorace_traffic_light_detect/param/lane/**.
 
 
+# 3. Result with Commented Demo
+As seen in the DEmo, the goal of the project was achieved. The Turtlebot3 successfully passed the Big Tunnel on different occasions. 
+
+https://user-images.githubusercontent.com/62597513/145721528-159b6d89-24ba-46d6-98df-98c78fc33d83.mp4
+
+
 # 4. Stretch goal
-This project focuses on driving the robot without external force by detecting two lanes. The workflow seems not much complicated other than some external constraints such as the environment light intensity. This has a great effect on the camera projection which makes it difficult for the turtlebot3 to maintain consistency. 
+This project focuses on driving the robot without external force by detecting two lanes. The workflow seems not much complicated other than some external constraints such as the environment light intensity. This has a great effect on the camera projection which makes it difficult for the turtlebot3 to maintain consistency, specifically passing through the big tunnel.  
 
 We started the traffic light detection but couldn't complete it because of time constraints and  the thresholding process seems to be the biggest challenge. 
 
 Our longtime goal is to complete the traffic light detection and work further on other missions on the Turtlebot3 Autorace challenge for personal development. Therefore, we tend to edit this project after  the implementation of the other Turtlebot3 Autorace tasks. 
 
-
-# 5. Demo
-
-
-
-https://user-images.githubusercontent.com/62597513/145721528-159b6d89-24ba-46d6-98df-98c78fc33d83.mp4
 
 
 
