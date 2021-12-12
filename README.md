@@ -83,7 +83,7 @@ The **HSL** (hue, saturation and lightness) is a cylindrical color model that re
 After the fine-tuning,  we then write the modified values of the **lane.yaml** file located in **turtlebot3autorace_traffic_light_detect/param/lane/**.
 
 
-# 3. Stretch goal
+# 4. Stretch goal
 This project focuses on driving the robot without external force by detecting two lanes. The workflow seems not much complicated other than some external constraints such as the environment light intensity. This has a great effect on the camera projection which makes it difficult for the turtlebot3 to maintain consistency. 
 
 We started the traffic light detection but couldn't complete it because of time constraints and  the thresholding process seems to be the biggest challenge. 
@@ -91,7 +91,8 @@ We started the traffic light detection but couldn't complete it because of time 
 Our longtime goal is to complete the traffic light detection and work further on other missions on the Turtlebot3 Autorace challenge for personal development. Therefore, we tend to edit this project after  the implementation of the other Turtlebot3 Autorace tasks. 
 
 
-
+# Demo
+https://github.com/ROS-PROJECT-05/ROBOTIC-PROJECT-2021/blob/main/FINAL_DEMO.mp4
 
 
 
