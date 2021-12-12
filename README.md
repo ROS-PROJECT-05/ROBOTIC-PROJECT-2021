@@ -78,7 +78,7 @@ The Lane detection package allows Turtlebot3 to drive between two lanes without 
 
 The **HSL** (hue, saturation and lightness) is a cylindrical color model that remaps the RGB primary colors into dimensions. It is important to note that the three dimensions of the HSL color model are interdependent. If the value dimension of a color is set to 0%, the amount of hue and saturation does not matter as the color will be black. Likewise, if the saturation of a color is set to 0%, the hue does not matter as there is no color used. 
 
-Prior to our specific goal, we placed the turtlebot3 close to the **Big Tunnel** to adjust the parameters value. We had the idea that if the turtlebot3 can detect the lanes in a darker space  then it will easily detect the lanes in a lightning environment.
+Prior to our **specific goal** i.e turtlebot3 passing through a **Big Tunnel**, we placed the turtlebot3 close to the **Big Tunnel** to fine-tune the parameters value. We had the idea that if the turtlebot3 can detect the lanes in a darker environment  then it will easily detect the lanes in a lightning environment. 
 
 ![lane_D](https://user-images.githubusercontent.com/62597513/145658830-e65d4af2-d79d-45e4-b165-ba2b25b01b1a.jpeg)
 
@@ -86,7 +86,7 @@ After the fine-tuning,  we then write the modified values of the **lane.yaml** f
 
 
 # 3. Result with Commented Demo
-As seen in the DEmo, the goal of the project was achieved. The Turtlebot3 successfully passed the Big Tunnel on different occasions. 
+As seen in the Demo, the goal of the project was achieved. The Turtlebot3 drives by detecting the lanes perfectly and successfully passed through the Big Tunnel on different occasions. 
 
 https://user-images.githubusercontent.com/62597513/145721528-159b6d89-24ba-46d6-98df-98c78fc33d83.mp4
 
