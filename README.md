@@ -74,6 +74,7 @@ The modifed parameters were saved in **turtlebot3_autorace_camera/calibration/ex
 ![Extrinsic_para](https://user-images.githubusercontent.com/62597513/145728490-523fb317-8ae6-4d97-b6f6-7b3c958adb77.jpeg)
 
 Below shows the image od the modified image: 
+
 ![modified](https://user-images.githubusercontent.com/62597513/145728330-4c2550e7-078f-4f7e-91b7-1e90fbea4cc1.jpeg)
 
 
