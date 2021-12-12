@@ -61,7 +61,7 @@ The Intrinsic parameters of a camera deals with the camera's internal characteri
   
   After the calibration, the **calibrationdata.tar.gz** folder was created at /tmp folder. We then extract the data from the ost.yalm file and save it in **turtlebot3_autorace_camera/calibration/intrinsic_calibration/camerav2_320x240_30fps.yaml**. The result is shown below: 
   
-  ![Calparam](https://user-images.githubusercontent.com/62597513/145639716-aa910eb4-1fcf-4872-bca0-d34437297eab.jpeg)
+  ![intrinsic](https://user-images.githubusercontent.com/62597513/145728099-b0191d35-2319-472d-a93d-040b2c7cd0f0.jpeg)
 
 
   ## 1.3 Extrinsic Camera Calibration
