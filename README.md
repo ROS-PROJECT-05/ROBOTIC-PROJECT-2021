@@ -42,7 +42,7 @@ source : https://www.robotis.us/turtlebot-3-burger-us/
 
 # 1. Camera Calibration 
 Geometric camera calibration estimates the parameters of a lens and image sensor of an image or video camera. These parameters could be used to correct lens distortion, measure the size of an object in world units, or determine the location of the camera in the scene.
-Therefore, the camera mounted on our turtlebot3 is Raspberry Pi ‘fish-eye’ camera, thus, it has very large distortion. But the images needed for this project should have little distortion so as not to affect the image processing steps. To achieve this, we followed the description to run the commands from [Turtlebot3 E-Manual Robotics](https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving/): 
+Therefore, the camera mounted on our turtlebot3 is Raspberry Pi ‘fish-eye’ camera, thus, it has very large distortion. But the images needed for this project should have little distortion so as not to affect the image processing steps. To achieve this, we followed the description to run the commands from [Turtlebot3 E-Manual Robotics](https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving/) for the  Camera Imaging Calibration, Intrinsic Camera Calibration, Extrinsic Camera Calibration. 
 
    ## 1.1 Camera Imaging Calibration
 The camera imaging calibration was done by executing the **rqt_reconfigure** to modify the camera parameter values and enable the turtlebot3 mounted camera to see clear images as such, the contrast, brightness, sharpness, and saturation parameters for clarity of the system camera.
@@ -65,7 +65,7 @@ The Intrinsic parameters of a camera deals with the camera's internal characteri
 
 
   ## 1.3 Extrinsic Camera Calibration
-The Extrinsic Camera calibration was done in order to acquire the robot pose and orientation. To get these done, we get the “birds-eye view” of the road, then launched the intrinsic modified calibration parameters as such in **action mode** before running the Extrinsic calibration packages. It published **/camera/image_extrinsic_calib/compressed** which is the default image showing the unaligned red border according to 4 image coordinates and **/camera/image_projected_compensated** image showing the scale of the image brightness contrast of the compressed image according to the **clip_hist_percent** parameter defined. The images below shows the **default image**:
+The Extrinsic Camera calibration was done in order to acquire the robot pose and orientation. To get these done, we launched the intrinsic modified calibration parameters as such in **action mode** before running the Extrinsic calibration packages. The Extrinsic Camera Calibration launch file basically runs two source code **image_compensation.py** and **image_projection.py**. It then published **/camera/image_extrinsic_calib/compressed** which is the default image showing the unaligned red border according to 4 image coordinates and **/camera/image_projected_compensated** “birds-eye view” image showing the scale of the image brightness contrast of the compressed image according to the **clip_hist_percent** parameter defined after runningthe **rqt**. The images below shows the **default image**:
 
 
 ![defaul](https://user-images.githubusercontent.com/62597513/145728174-e11c5f22-b75a-4501-8b73-d2a513f3e974.jpeg)
@@ -81,7 +81,12 @@ Below shows the image of the **modified image**:
 
 
 # 2. Lane Detection 
-The Lane detection package allows Turtlebot3 to drive between two lanes without external influence. The robot was placed on the lane whereby the **yellow line** was on the left side of the robot, and the **white line** was placed on the right side of the robot. From here, we adjust the filter parameters by doing the thresholding of the HSL (hue, saturation and lightness) using the **rqt_reconfigure** to fine-tune the lines and the direction as such, the red line was overlaid on the yellow line while the blue line was overlaid on the white line. To achieve this, we followed the description to run the commands from [Turtlebot3 E-Manual Robotics](https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving/)
+The Lane detection package allows Turtlebot3 to drive between two lanes without external influence. The robot was placed on the lane whereby the **yellow line** was on the left side of the robot, and the **white line** was placed on the right side of the robot. Here, the lane detection packages [Turtlebot3 E-Manual Robotics](https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving/) were executed and the launch file basically runs the lane detection source code **detect_lane.py**. The nodes publishes the below topics after running the **rqt**:   
+- **/detect/image_white_lane_marker/compressed**
+- **/detect/image_yellow_lane_marker/compressed**
+- **/detect/image_lane/compessed** which contains the reference line for the turtlebot3  trajectory.  
+
+From here, we adjust the filter parameters by doing the **thresholding** of the **HSL** (hue, saturation and lightness) using the **rqt_reconfigure** to fine-tune the lines and the direction as such, the red line was overlaid on the yellow line while the blue line was overlaid on the white line. To achieve this, we followed the description to run the commands from 
 
 ![Detect_lane_rqt](https://user-images.githubusercontent.com/62597513/145726782-9479f51c-ba69-4f9b-9baa-bd35f3cd3ee6.jpeg)
 
