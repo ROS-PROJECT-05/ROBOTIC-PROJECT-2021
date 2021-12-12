@@ -92,8 +92,10 @@ Our longtime goal is to complete the traffic light detection and work further on
 
 
 # 5. Demo
-Download through  https://github.com/ROS-PROJECT-05/ROBOTIC-PROJECT-2021/blob/main/FINAL_DEMO.mp4
 
 
-/home/ola/Downloads/FINAL_DEMO.mp4
+
+https://user-images.githubusercontent.com/62597513/145721528-159b6d89-24ba-46d6-98df-98c78fc33d83.mp4
+
+
 
