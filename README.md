@@ -42,7 +42,7 @@ source : https://www.robotis.us/turtlebot-3-burger-us/
 
 # 1. Camera Calibration 
 Geometric camera calibration estimates the parameters of a lens and image sensor of an image or video camera. These parameters could be used to correct lens distortion, measure the size of an object in world units, or determine the location of the camera in the scene.
-Therefore, the camera mounted on our turtlebot3 is Raspberry Pi ‘fish-eye’ camera, thus, it has very large distortion. But the images needed for this project should have little distortion so as not to affect the image processing steps. To achieve this, we followed the description from [Turtlebot3 E-Manual Robotics](https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving/): 
+Therefore, the camera mounted on our turtlebot3 is Raspberry Pi ‘fish-eye’ camera, thus, it has very large distortion. But the images needed for this project should have little distortion so as not to affect the image processing steps. To achieve this, we followed the description to run the commands from [Turtlebot3 E-Manual Robotics](https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving/): 
 
    ## 1.1 Camera Imaging Calibration
 The camera imaging calibration was done by executing the **rqt_reconfigure** to modify the camera parameter values and enable the turtlebot3 mounted camera to see clear images as such, the contrast, brightness, sharpness, and saturation parameters for clarity of the system camera.
@@ -73,7 +73,7 @@ The Extrinsic Camera calibration was done in order to acquire the robot pose and
 
 
 # 2. Lane Detection 
-The Lane detection package allows Turtlebot3 to drive between two lanes without external influence. The robot was placed on the lane whereby the **yellow line** was on the left side of the robot, and the **white line** was placed on the right side of the robot. From here, we adjust the filter parameters by doing the thresholding of the HSL (hue, saturation and lightness) using the **rqt_reconfigure** to fine-tune the lines and the direction as such, the red line was overlaid on the yellow line while the blue line was overlaid on the white line. 
+The Lane detection package allows Turtlebot3 to drive between two lanes without external influence. The robot was placed on the lane whereby the **yellow line** was on the left side of the robot, and the **white line** was placed on the right side of the robot. From here, we adjust the filter parameters by doing the thresholding of the HSL (hue, saturation and lightness) using the **rqt_reconfigure** to fine-tune the lines and the direction as such, the red line was overlaid on the yellow line while the blue line was overlaid on the white line. To achieve this, we followed the description to run the commands from [Turtlebot3 E-Manual Robotics](https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving/)
 
 ![lane_Dt_rqt](https://user-images.githubusercontent.com/62597513/145659059-5e3c2f72-d3b5-463a-af8e-f9c8682189dc.jpeg)
 
