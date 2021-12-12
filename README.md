@@ -80,7 +80,7 @@ The **HSL** (hue, saturation and lightness) is a cylindrical color model that re
 
 ![lane_D](https://user-images.githubusercontent.com/62597513/145658830-e65d4af2-d79d-45e4-b165-ba2b25b01b1a.jpeg)
 
-After the fine-tuning,  we then write the modified values to the lane.yaml file located in **turtlebot3autorace_traffic_light_detect/param/lane/**.
+After the fine-tuning,  we then write the modified values of the **lane.yaml** file located in **turtlebot3autorace_traffic_light_detect/param/lane/**.
 
 
 # 3. Stretch goal
