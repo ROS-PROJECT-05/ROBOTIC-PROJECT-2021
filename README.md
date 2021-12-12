@@ -69,7 +69,8 @@ The Extrinsic Camera calibration was done in order to acquire the robot pose and
 
 ![defaul](https://user-images.githubusercontent.com/62597513/145728174-e11c5f22-b75a-4501-8b73-d2a513f3e974.jpeg)
 
-![modified](https://user-images.githubusercontent.com/62597513/145728263-9a15e16c-2d13-4678-9f0a-8f79fbf65ef6.jpeg)
+
+![modified](https://user-images.githubusercontent.com/62597513/145728330-4c2550e7-078f-4f7e-91b7-1e90fbea4cc1.jpeg)
 
 
 # 2. Lane Detection 
