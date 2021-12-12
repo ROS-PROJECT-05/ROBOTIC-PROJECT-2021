@@ -75,7 +75,7 @@ The Extrinsic Camera calibration was done in order to acquire the robot pose and
 # 2. Lane Detection 
 The Lane detection package allows Turtlebot3 to drive between two lanes without external influence. The robot was placed on the lane whereby the **yellow line** was on the left side of the robot, and the **white line** was placed on the right side of the robot. From here, we adjust the filter parameters by doing the thresholding of the HSL (hue, saturation and lightness) using the **rqt_reconfigure** to fine-tune the lines and the direction as such, the red line was overlaid on the yellow line while the blue line was overlaid on the white line. To achieve this, we followed the description to run the commands from [Turtlebot3 E-Manual Robotics](https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving/)
 
-![lane_Dt_rqt](https://user-images.githubusercontent.com/62597513/145659059-5e3c2f72-d3b5-463a-af8e-f9c8682189dc.jpeg)
+![Detect_lane_rqt](https://user-images.githubusercontent.com/62597513/145726782-9479f51c-ba69-4f9b-9baa-bd35f3cd3ee6.jpeg)
 
 The **HSL** (hue, saturation and lightness) is a cylindrical color model that remaps the RGB primary colors into dimensions. It is important to note that the three dimensions of the HSL color model are interdependent. If the value dimension of a color is set to 0%, the amount of hue and saturation does not matter as the color will be black. Likewise, if the saturation of a color is set to 0%, the hue does not matter as there is no color used. [source](https://programmingdesignsystems.com/color/color-models-and-color-spaces/index.html)
 
