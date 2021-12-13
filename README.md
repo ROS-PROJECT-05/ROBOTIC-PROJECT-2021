@@ -42,7 +42,7 @@ source : https://www.robotis.us/turtlebot-3-burger-us/
 
 # 1. Camera Calibration 
 Geometric camera calibration estimates the parameters of a lens and image sensor of an image or video camera. These parameters could be used to correct lens distortion, measure the size of an object in world units, or determine the location of the camera in the scene.
-Therefore, the camera mounted on our turtlebot3 is Raspberry Pi ‘fish-eye’ camera, thus, it has very large distortion. But the images needed for this project should have little distortion so as not to affect the image processing steps. To achieve this, we followed the description to run the commands from [Turtlebot3 E-Manual Robotics](https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving/) for the  **Camera Imaging Calibration**, **Intrinsic Camera Calibration** and **Extrinsic Camera Calibration**. 
+Therefore, the camera mounted on our turtlebot3 is Raspberry Pi ‘fish-eye’ camera, thus, it has very large distortion. But the images needed for this project should have little distortion so as not to affect the image processing steps. To achieve this, we followed the description to run the **commands** from [Turtlebot3 E-Manual Robotics](https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving/) for the  **Camera Imaging Calibration**, **Intrinsic Camera Calibration** and **Extrinsic Camera Calibration**. 
 
    ## 1.1 Camera Imaging Calibration
 The camera imaging calibration was done by executing the **rqt_reconfigure** to modify the camera parameter values and enable the turtlebot3 mounted camera to see clear images as such, the contrast, brightness, sharpness, and saturation parameters for clarity of the system camera.
