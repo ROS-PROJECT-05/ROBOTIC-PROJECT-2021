@@ -67,8 +67,8 @@ The Intrinsic parameters of a camera deals with the camera's internal characteri
   ## 1.3 Extrinsic Camera Calibration
 The Extrinsic Camera calibration was done in order to acquire the robot pose and orientation. To get these done, we launched the intrinsic modified calibration parameters as such in **action mode** before running the Extrinsic calibration packages. The Extrinsic Camera Calibration launch file basically runs two source code **image_compensation.py** and **image_projection.py**. It then published **/camera/image_extrinsic_calib/compressed** which is the default image showing the unaligned red border according to 4 image coordinates and **/camera/image_projected_compensated** “birds-eye view” image showing the scale of the image brightness contrast of the compressed image according to the **clip_hist_percent** parameter defined after running the **rqt**. The images below shows the **default image** and **compensated image*:
 
+![Default and compensated](https://user-images.githubusercontent.com/62597513/145770057-71554f32-dfe2-45f1-bd91-8abfcc32a3b5.jpeg)
 
-![defaul](https://user-images.githubusercontent.com/62597513/145728174-e11c5f22-b75a-4501-8b73-d2a513f3e974.jpeg)
 
 Then we excuted **rqt_reconfigure** to adjust the parameters and the modifed parameters were saved in **turtlebot3_autorace_camera/calibration/extrinsic_calibration/projection.yaml** and **turtlebot3_autorace_camera/calibration/extrinsic_calibration/compensation.yaml files**.
 
