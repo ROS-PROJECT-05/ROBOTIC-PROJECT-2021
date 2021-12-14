@@ -29,7 +29,7 @@ source : https://www.robotis.us/turtlebot-3-burger-us/
 
 - The system was run through a **stationary PC**, connected to the TurtleBot3 running **Ubuntu 18.04**
 - Camera - **Raspberry Pi ‘fish-eye’** camera
-- **ROS-melodic_Autorace_2020** and **dependent ROS packages** were installed on the system by cloning this github link [TurtleBot3 AutoRace](https://github.com/ROBOTIS-GIT/turtlebot3_autorace) 
+- **ROS-kinetic_Autorace_2020** and **dependent ROS packages** were installed on the system by cloning this github link [TurtleBot3 AutoRace](https://github.com/ROBOTIS-GIT/turtlebot3_autorace) 
 
 
 # Project Architecture 
