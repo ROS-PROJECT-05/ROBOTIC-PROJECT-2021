@@ -113,5 +113,5 @@ We started the traffic light detection but couldn't complete it because of time 
 Our longtime goal is to complete the traffic light detection and work further on other missions on the Turtlebot3 Autorace challenge for personal development. Therefore, we tend to edit this project after  the implementation of the other Turtlebot3 Autorace tasks. 
 
 # 5. Conclusion
-This project focuses on driving the robot without external force by detecting two lanes as such, colour detection and the project was achieved  following the steps on https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving/.  
+This project focuses on driving the robot without external force by detecting two lanes as such, colour detection. The project was achieved  following the steps on https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving/.  
 
