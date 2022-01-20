@@ -118,3 +118,4 @@ Our longtime goal is to complete the traffic light detection and work further on
 # 5. Conclusion
 This project focuses on driving the robot without external force by detecting two lanes as such, colour detection. The project was achieved  following the steps on https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving/.  
 
+[Powerpoint](https://docs.google.com/presentation/d/1Ll4vH2Ak7FGH3H24J7C4lTwDl5MHA5EaLxJSeM-wxW8/edit#slide=id.gfb1d192b96_0_13)
