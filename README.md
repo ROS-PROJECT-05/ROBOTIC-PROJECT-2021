@@ -1,14 +1,13 @@
 # AUTONOMOUS DRIVING OF TURTLEBOT3
+
 <img align="left" width="200" height="100" src="https://user-images.githubusercontent.com/62597513/145659645-9ab35c4d-694e-499d-8fad-6bf1091d32ec.jpeg">
+<img align="right" width="200" height="100" src="https://user-images.githubusercontent.com/62597513/150416328-160de66a-30b7-4a78-960b-b74db8ab4096.jpeg">
 
-
-
-<img align="right" width="150" height="100" src="https://user-images.githubusercontent.com/62597513/150416328-160de66a-30b7-4a78-960b-b74db8ab4096.jpeg">
 
 
 
 ### Prepared by:
-#### - Lateef Olalekan Aderinoye and Olarinde Fatai Jimoh
+#### Lateef Olalekan Aderinoye and Olarinde Fatai Jimoh
 
 <p align="center">
    Supervised by: 
