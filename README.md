@@ -1,15 +1,22 @@
 # AUTONOMOUS DRIVING OF TURTLEBOT3
-![UB](https://user-images.githubusercontent.com/62597513/145659645-9ab35c4d-694e-499d-8fad-6bf1091d32ec.jpeg)
+<img align="left" width="200" height="100" src="https://user-images.githubusercontent.com/62597513/145659645-9ab35c4d-694e-499d-8fad-6bf1091d32ec.jpeg">
 
-## Prepared by:
+
+
+<img align="right" width="200" height="100" src="https://user-images.githubusercontent.com/62597513/150416328-160de66a-30b7-4a78-960b-b74db8ab4096.jpeg">
+
+
+
+### Prepared by:
 ### Lateef Olalekan Aderinoye and Olarinde Fatai Jimoh
 
-## Supervised by: 
-   ###              Duverne Raphaek
-   ###            Seulin Ralph
-   ###            Rodriguez J. Joaquin
-   ###            Martins Renato
-   
+<p align="center">
+   Supervised by: 
+   Duverne Raphaek,
+   Seulin Ralph,
+   Rodriguez J. Joaquin,
+   Martins Renato.   
+</p>
 
 
 ![_msr-peng_Self-Driving-Turtlebot3_blob_master_pictures_turtlebot-3](https://user-images.githubusercontent.com/62597513/145625174-0cad437b-5282-46da-a499-9244b2de4d8d.jpg)
