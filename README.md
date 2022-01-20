@@ -8,7 +8,7 @@
 
 
 ### Prepared by:
-### Lateef Olalekan Aderinoye and Olarinde Fatai Jimoh
+#### Lateef Olalekan Aderinoye and Olarinde Fatai Jimoh
 
 <p align="center">
    Supervised by: 
