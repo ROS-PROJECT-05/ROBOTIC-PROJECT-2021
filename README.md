@@ -19,7 +19,9 @@
 # Problem Statement 
 This project focuses on elementary turtlebot3 self-driving, which drives between two detected lanes. The project is to solve an autonomous driving lane tracking challenge, and all steps taken which have been described in [Turtlebot3 E-Manual Robotics](https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving_autorace/) were executed accordingly to carry out the goal of the project.
 
-[Goal Demo](https://github.com/ROS-PROJECT-05/ROBOTIC-PROJECT-2021/blob/main/TEST_DEMO.MOV)
+
+https://user-images.githubusercontent.com/62597513/150413171-4b624ab3-7779-4e1a-b1e1-89b6737f08db.mov
+
 
 # Requirement 
 - **Turtlebot3**: It is the newest generational mobile robot. It is a basic model to use AutoRace packages for autonomous driving on ROS. For this project, the TurtleBot3 Burger (with packages installed on it) was  provided by our [university](https://condorcet.u-bourgogne.fr/en).  The main components are shown below: 
