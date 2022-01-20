@@ -25,8 +25,9 @@
 # Problem Statement 
 This project focuses on elementary turtlebot3 self-driving, which drives between two detected lanes. The project is to solve an autonomous driving lane tracking challenge, and all steps taken which have been described in [Turtlebot3 E-Manual Robotics](https://emanual.robotis.com/docs/en/platform/turtlebot3/autonomous_driving_autorace/) were executed accordingly to carry out the goal of the project.
 
-
-https://user-images.githubusercontent.com/62597513/150413171-4b624ab3-7779-4e1a-b1e1-89b6737f08db.mov
+<p align="center">
+  <img width="460" height="300" src="https://user-images.githubusercontent.com/62597513/150413171-4b624ab3-7779-4e1a-b1e1-89b6737f08db.mov">
+</p>
 
 
 # Requirement 
